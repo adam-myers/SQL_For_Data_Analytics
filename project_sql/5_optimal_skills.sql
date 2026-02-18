@@ -24,7 +24,7 @@ WHERE
 GROUP BY
     sd.skill_id
 HAVING
-    COUNT(jpf.job_id) > 10 -- Keeps results to skills with more than 10 associated jobs.
+    COUNT(jpf.job_id) > 25 -- Keeps results to skills with more than 25 associated jobs.
 ORDER BY
     avg_salary DESC,
     demand_count DESC
